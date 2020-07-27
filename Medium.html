@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sudoku Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='Medium.css'> 
+</head>
+<body onload="mediumSudoku()"> 
+    <div class="container">
+    <div class="MainTable">
+    <br>
+    <p id='name'> Good Luck </p>
+    <table  id="sudokutable1">
+    <tr>
+        <td ><input maxlength="1" type="text"id="a0a0"></td>
+        <td ><input maxlength="1" type="text"id="a0a1"></td>
+        <td ><input maxlength="1" type="text"id="a0a2"></td>
+        <td ><input maxlength="1" type="text"id="a0a3"></td>
+        <td ><input maxlength="1" type="text"id="a0a4"></td>
+        <td ><input maxlength="1" type="text"id="a0a5"></td>
+        <td ><input maxlength="1" type="text"id="a0a6"></td>
+        <td ><input maxlength="1" type="text"id="a0a7"></td>
+        <td ><input maxlength="1" type="text"id="a0a8"></td>
+    </tr>
+    
+    <tr>
+        <td ><input maxlength="1" type="text"id="a1a0"></td>
+        <td ><input maxlength="1" type="text"id="a1a1"></td>
+        <td ><input maxlength="1" type="text"id="a1a2"></td>
+        <td ><input maxlength="1" type="text"id="a1a3"></td>
+        <td ><input maxlength="1" type="text"id="a1a4"></td>
+        <td ><input maxlength="1" type="text"id="a1a5"></td>
+        <td ><input maxlength="1" type="text"id="a1a6"></td>
+        <td ><input maxlength="1" type="text"id="a1a7"></td>
+        <td ><input maxlength="1" type="text"id="a1a8"></td>
+    </tr>
+    
+    <tr>
+        <td ><input maxlength="1" type="text"id="a2a0"></th>
+        <td ><input maxlength="1" type="text"id="a2a1"></td>
+        <td ><input maxlength="1" type="text"id="a2a2"></td>
+        <td ><input maxlength="1" type="text"id="a2a3"></td>
+        <td ><input maxlength="1" type="text"id="a2a4"></td>
+        <td ><input maxlength="1" type="text"id="a2a5"></td>
+        <td ><input maxlength="1" type="text"id="a2a6"></td>
+        <td ><input maxlength="1" type="text"id="a2a7"></td>
+        <td ><input maxlength="1" type="text"id="a2a8"></td>
+    </tr>
+
+    <tr>
+        <td ><input maxlength="1" type="text"id="a3a0"></td>
+        <td ><input maxlength="1" type="text"id="a3a1"></td>
+        <td ><input maxlength="1" type="text"id="a3a2"></td>
+        <td ><input maxlength="1" type="text"id="a3a3"></td>
+        <td ><input maxlength="1" type="text"id="a3a4"></td>
+        <td ><input maxlength="1" type="text"id="a3a5"></td>
+        <td ><input maxlength="1" type="text"id="a3a6"></td>
+        <td ><input maxlength="1" type="text"id="a3a7"></td>
+        <td ><input maxlength="1" type="text"id="a3a8"></td>
+    </tr>
+    
+    <tr>
+        <td ><input maxlength="1" type="text"id="a4a0"></td>
+        <td ><input maxlength="1" type="text"id="a4a1"></td>
+        <td ><input maxlength="1" type="text"id="a4a2"></td>
+        <td ><input maxlength="1" type="text"id="a4a3"></td>
+        <td ><input maxlength="1" type="text"id="a4a4"></td>
+        <td ><input maxlength="1" type="text"id="a4a5"></td>
+        <td ><input maxlength="1" type="text"id="a4a6"></td>
+        <td ><input maxlength="1" type="text"id="a4a7"></td>
+        <td ><input maxlength="1" type="text"id="a4a8"></td>
+    </tr>
+    
+    <tr>
+        <td ><input maxlength="1" type="text"id="a5a0"></td>
+        <td ><input maxlength="1" type="text"id="a5a1"></td>
+        <td ><input maxlength="1" type="text"id="a5a2"></td>
+        <td ><input maxlength="1" type="text"id="a5a3"></td>
+        <td ><input maxlength="1" type="text"id="a5a4"></td>
+        <td ><input maxlength="1" type="text"id="a5a5"></td>
+        <td ><input maxlength="1" type="text"id="a5a6"></td>
+        <td ><input maxlength="1" type="text"id="a5a7"></td>
+        <td ><input maxlength="1" type="text"id="a5a8"></td>
+    </tr>
+    
+    <tr>
+        <td ><input maxlength="1" type="text"id="a6a0"></td>
+        <td ><input maxlength="1" type="text"id="a6a1"></td>
+        <td ><input maxlength="1" type="text"id="a6a2"></td>
+        <td ><input maxlength="1" type="text"id="a6a3"></td>
+        <td ><input maxlength="1" type="text"id="a6a4"></td>
+        <td ><input maxlength="1" type="text"id="a6a5"></td>
+        <td ><input maxlength="1" type="text"id="a6a6"></td>
+        <td ><input maxlength="1" type="text"id="a6a7"></td>
+        <td ><input maxlength="1" type="text"id="a6a8"></td>
+    </tr>
+    
+    <tr>
+        <td ><input maxlength="1" type="text"id="a7a0"></td>
+        <td ><input maxlength="1" type="text"id="a7a1"></td>
+        <td ><input maxlength="1" type="text"id="a7a2"></td>
+        <td ><input maxlength="1" type="text"id="a7a3"></td>
+        <td ><input maxlength="1" type="text"id="a7a4"></td>
+        <td ><input maxlength="1" type="text"id="a7a5"></td>
+        <td ><input maxlength="1" type="text"id="a7a6"></td>
+        <td ><input maxlength="1" type="text"id="a7a7"></td>
+        <td ><input maxlength="1" type="text"id="a7a8"></td>
+    </tr>
+
+    <tr>
+        <td ><input maxlength="1" type="text"id="a8a0"></td>
+        <td ><input maxlength="1" type="text"id="a8a1"></td>
+        <td ><input maxlength="1" type="text"id="a8a2"></td>
+        <td ><input maxlength="1" type="text"id="a8a3"></td>
+        <td ><input maxlength="1" type="text"id="a8a4"></td>
+        <td ><input maxlength="1" type="text"id="a8a5"></td>
+        <td ><input maxlength="1" type="text"id="a8a6"></td>
+        <td ><input maxlength="1" type="text"id="a8a7"></td>
+        <td ><input maxlength="1" type="text"id="a8a8"></td>
+    </tr>
+
+</table>
+</div>
+<br>
+<br>
+<div class="btn-group">
+    <button type="button" id="button1" onclick="sudokupuzzle()" class="btn-primary" > Submit </button>
+    <button type="button" id="button2" class="btn-warning" onclick="mediumSudoku()"> Again </button>
+    <button type="button" id="button3" class="btn-primary" onclick="back()"> Back </button>
+    <button type="button" id="button4" class="btn-info" onclick="ontimer()"> Timer </button>
+    <h3 id="time"></h3>
+</div>
+</div</div>
+
+<script src='Medium.js'></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+.welcome{
+    position: relative;
+    text-align: center;
+    top: 200px;
+}
+#name{
+    color: #8D0014;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 80px;
+}
+#level{
+    color: #8D0014;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+#select{
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;                             
+    font-weight: bold;
+    color: #002937;
+
+}
+body{
+    background-image: url(s7.jpg);
+    background-size: cover;
+}
+#play{
+    width: 150px;
+    height: 30px;
+    position: relative;
+    font-family: 'Baskerville Old Face';    
+    font-size: 25px;
+    font-weight: bold;
+    color: #002937;
+    border: hidden;
+}
+#r1{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    font-family: 'Baskerville Old Face';    
+    font-size: 25px;
+    font-weight: bold;
+    color: #002937;
+    margin-top: 100px;
+}

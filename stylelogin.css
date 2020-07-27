@@ -1,0 +1,33 @@
+.login{
+    position: relative;
+    text-align: center;
+    top: 150px;
+}
+#name{
+    color: #8D0014;
+    font-size: 100px;
+    font-family: 'Lemon Jelly Personal Use ';
+}
+#message1,#message2{
+    color: red;
+    position: relative;
+    font-size: 15px;
+}
+#username,#password{
+    width: 300px;
+    height: 35px;
+    border-radius: 8px;
+    border-style: hidden;
+}
+#enter{
+    width: 100px;
+    height: 45px;
+    font-size: 30px;
+    font-family: 'Baskerville Old Face';    
+    font-weight: bold;
+    color: #002937;
+    border: hidden;}
+body{
+    background-image: url('s7.jpg');
+    background-size: cover;
+}
